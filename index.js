@@ -1,10 +1,11 @@
 const express = require('express')
 const os = require("os")
 const app = express()
-const port = 3000
+const port = 80
 
 app.set('views', './views');
 app.set('view engine', 'pug');
+app.use(express.static('public'));
 
 const pokeneas = [
     {
@@ -94,8 +95,9 @@ app.get('/pokenea', (req, res) => {
     const randomPokenea = pokeneas[randomIndex];
     const imageSrc = randomPokenea.imagen;
     const frase_filosofica = randomPokenea.frase_filosofica;
+    const containerId = os.hostname();
 
-    res.render('pokenea', { imageSrc, frase_filosofica });
+    res.render('pokenea', { imageSrc, frase_filosofica, containerId});
 });
 
 app.listen(port, () => {

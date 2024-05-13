@@ -1,10 +1,19 @@
-doctype html
-html
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Pokenea
-  body
-    h1 Página de Pokenea
-    img(src=imageSrc, alt='Imagen del Pokenea')
-    p Frase filosófica: #{frase_filosofica}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="pokedex">
+        <h1 class="pokedex-title">PokeNeadex</h1>
+        <div class="screen">
+            img(src=imageSrc, alt='Imagen del Pokenea', width='200', height='200')
+        </div>
+        <p class="pokedex-text">Frase filosófica: <span class="philosophical-phrase">#{frase_filosofica}</span></p>
+        <p class="pokedex-text">Container Id: <span class="container-id">#{containerId}</span></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pokedex {
+    background-color: #ff3c3c;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pokedex-title {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.screen {
+    border: 10px solid #000;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.screen-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pokedex-text {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.philosophical-phrase,
+.container-id {
+    font-style: italic;
+    color: #ffffff;
+}
